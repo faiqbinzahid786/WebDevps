@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Add Collection</title>
+    <script src="include.js"></script>
+
+</head>
+
+<body>
+    <div w3-include-html="head.html"></div>
+    <script>
+        includeHTML();
+    </script>
+
+    <div class="container" id="includedContent">
+        <br>
+        <h1>Add new collection</h1>
+        <form action="add.php" method="GET">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" placeholder="Enter title" name="title">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Artist:</label>
+                <input type="text" class="form-control" placeholder="Enter artist" name="artist">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Country:</label>
+                <input type="text" class="form-control" placeholder="Enter country" name="country">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Company:</label>
+                <input type="text" class="form-control" placeholder="Enter company" name="company">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Price:</label>
+                <input type="number" class="form-control" placeholder="Enter price" name="price">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Year:</label>
+                <input type="number" class="form-control" placeholder="Enter year" name="year">
+            </div>
+            <button type="submit" class="btn btn-dark block">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

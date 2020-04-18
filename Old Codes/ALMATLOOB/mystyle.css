@@ -1,0 +1,56 @@
+table,
+td,
+tr {
+    border: 1px solid #021ff9;
+    padding: 4px;
+}
+
+td {
+    color: #000000;
+}
+
+.leftal {
+    text-align: right;
+    align-content: flex-end
+}
+
+.container-forms {
+    width: 1000px;
+    margin: inherit;
+    margin-left: 20px;
+}
+
+.container-fluids {
+    margin-left: 16px;
+}
+
+.container-fluidser {
+    margin-left: 34px;
+}
+
+.design {
+    text-align: justify;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+
+.cover {
+    padding-left: -15px;
+}
+
+.faiq {
+    position: relative
+}
+
+p.footer {
+    font-size: 14px;
+}
+
+.footer {
+    background-color: aliceblue
+}
+
+#cent {
+    text-align: center'
+
+}

@@ -1,0 +1,85 @@
+<!--This page is for developers which explain coding and nodes-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Books</title>
+
+    <script src="include.js"></script>
+
+</head>
+
+<body>
+    <div w3-include-html="head.html"></div>
+    <script>
+        includeHTML();
+    </script>
+
+    <div class="margins"><br><br>
+        <h1 class="display-5">Developer's Guide</h1><br>
+        <h3>Backend of the System</h3><br>
+        <p style="font-size: 20px;">The description of the system will explain you how this system is created. What kinds of langauges used, which kinds of nodes is used, how to access different nodes, how to add different nodes, and how to edit different nodes. </p>
+        <h3>Programming Languages Used</h3><br>
+        <ul style="font-size: 20px;">
+            <b><li>Client-Side Languages</li></b>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/">HTML (HyperText Markup Language)</a></li>
+                <li><a href="https://www.w3schools.com/css/default.asp">CSS (Cascading Style Sheets)</a></li>
+                <li><a href="https://www.w3schools.com/js/default.asp">Javascript</a></li>
+            </ul>
+            <b><li>Server-Side Languages</li></b>
+            <ul style="font-size: 20px;">
+                <li><a href="https://www.w3schools.com/php/default.asp">PHP (Personal Home Page)</a></li>
+            </ul>
+        </ul><br>
+        <h3>XML (eXtensible Markup Language)</h3><br>
+        <p style="font-size: 20px;">
+            A simple XML document looks like this: <a href="http://localhost/myBookCollection/books.xml">XML File</a>
+            <br> XML documents can also be much more complex than that and include other markup elements (like namespaces or comments). <b>XML elements</b>: nodes and attributes. While we could theoretically write an XML document using standard functions
+            only (for example, "echoing" all the lines into a variable), this is a valid option only if the document we need to create is really simple and if we know exactly which data it will contain. In practice, most of the time we will need to create
+            XML documents reading data from somewhere (like a database) and dynamically add or edit nodes and attributes. Doing that with standard string functions is nearly impossible. Fortunately, PHP gives us some nice tools for handling XML documents.
+            The first we are going to see is the SimpleXML extension, and its main class called SimpleXMLElement.
+        </p><br>
+        <h3>SimpleXML Extension in PHP</h3><br>
+        <p style="font-size: 20px;">
+            As the name suggests, this is probably the most simple and straightforward extension you can use to generate XML documents. Here is how you can use the <b>SimpleXMLElement</b> class to replicate the previous example:
+            <br><br>
+            <div class="container"><img width="100%" height="500px" src="simpleXML.PNG"></div><br><br> </p>
+        <p style="font-size: 20px;">Thanks to its simple syntax and its readable code, the SimpleXML extension is a good choice if you just need to do some basic XML editing. However, this class has a few drawbacks. First of all, the class constructor needs an existing XML document
+            to work with, so we need to manually create it ourselves. That is the reason why we need to define the $xml_header variable before creating the SimpleXMLElement object in the code above. Also, this extensions may not be the best choice if
+            more complex editing is required, as it lacks some functionalities. For example, the SimpleXMLElement class doesn’t have functions for removing existing nodes (you need to manually use unset) and cannot validate documents.
+        </p><br>
+        <h3>PHP Nodes for XML Elements</h3><br>
+        <b><p style="font-size: 23px;">Addchild Node</p></b><br>
+        <p style="font-size: 20px;">
+            SimpleXMLElement::addChild - Adds a child element to the XML node.<br><br>
+            <div class="container"><img width="100%" src="add.PNG"></div>
+        </p>
+        <p style="font-size: 20px;">
+            Adds a child element to the node and returns a SimpleXMLElement of the child.
+        </p><br>
+        <b><p style="font-size: 23px;">Deletechild Node</p></b><br>
+        <p style="font-size: 20px;">
+            DOMNode::removeChild - Removes child from list of children<br><br>
+            <div class="container"><img width="70%" src="delete.PNG"></div>
+        </p>
+        <p style="font-size: 20px;">
+            This functions removes a child from a list of children.
+        </p><br>
+        <b><p style="font-size: 23px;">Replacechild Node</p></b><br>
+        <p style="font-size: 20px;">
+            DOMNode::replaceChild - Replaces a child<br><br>
+            <div class="container"><img width="100%" src="replace.PNG"></div>
+        </p>
+        <p style="font-size: 20px;">
+            This function replaces the child oldnode with the passed new node. If the newnode is already a child it will not be added a second time. If the replacement succeeds the old node is returned.
+        </p><br>
+
+    </div>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,115 @@
+iBooks Collection Log® 
+Monday 9th December 2019 08:54:14am
+______________________________________________________
+
+A Book was added with the information below: 
+    
+-> Book ID: FAIQQQQQ
+-> Author: Faiq Bin Zahid
+-> Title: Accounting
+-> Genre: Business
+-> Price: 
+-> Published Date: 
+-> Description: 
+
+
+iBooks Collection Log® 
+Monday 9th December 2019 08:55:52am
+______________________________________________________
+
+A Book was added with the information below: 
+    
+-> Book ID: 232322
+-> Author: 
+-> Title: 
+-> Genre: 
+-> Price: 
+-> Published Date: 
+-> Description: 
+
+
+iBooks Collection Log® 
+Monday 9th December 2019 08:55:56am
+______________________________________________________
+
+A Book was added with the information below: 
+    
+-> Book ID: 23232223232322
+-> Author: 
+-> Title: 
+-> Genre: 
+-> Price: 
+-> Published Date: 
+-> Description: 
+
+
+iBooks Collection Log® 
+Monday 9th December 2019 08:56:00am
+______________________________________________________
+
+A Book was added with the information below: 
+    
+-> Book ID: 12312313
+-> Author: 
+-> Title: 
+-> Genre: 
+-> Price: 
+-> Published Date: 
+-> Description: 
+
+
+iBooks Collection Log® 
+Monday 9th December 2019 08:58:41am
+______________________________________________________
+
+A Book was added with the information below: 
+    
+-> Book ID: TED444
+-> Author: 
+-> Title: 
+-> Genre: 
+-> Price: 
+-> Published Date: 
+-> Description: 
+
+
+iBooks Collection Log® 
+Monday 9th December 2019 08:58:51am
+______________________________________________________
+
+A Book was added with the information below: 
+    
+-> Book ID: tgg3
+-> Author: wewe
+-> Title: wrw
+-> Genre: 232
+-> Price: 
+-> Published Date: 
+-> Description: 
+
+
+iBooks Collection Log® 
+Monday 9th December 2019 08:58:57am
+______________________________________________________
+
+An information about the Book was removed from the system: 
+    
+-> Book ID: tgg3
+-> Tag: author
+
+
+iBooks Collection Log® 
+Monday 9th December 2019 09:02:16am
+______________________________________________________
+
+A Book was added with the information below: 
+    
+-> Book ID: 232322
+-> Author: qqq
+-> Title: www
+-> Genre: 
+-> Price: 
+-> Published Date: 
+-> Description: 
+
+

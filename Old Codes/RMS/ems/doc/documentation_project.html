@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Project Documentation</title>
+  <link rel="shortcut icon" type="image/png" href="people.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!--Linking all the stylesheets - CSS and Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+
+<div class='container-fluidser'>
+  <br><h1><strong>The Employee Management System®</strong></h1><br>
+</div>
+
+<nav class='navbar navbar-expand-sm bg-dark navbar-dark sticky-top '>
+
+    <div class='container-fluid' id="1">
+      <span class="cover">
+        <ul class='navbar-nav'>
+          <li class='nav-item active'>
+            <a class='nav-link' href='../index.php'>EM Managment</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='../employee.php'>Employees</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='../project.php'>Project</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='../department.php'>Department</a>
+          </li>
+          <li>
+            <a class="nav-link">
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+          </li>
+
+    <!-- Dropdown -->
+   <li class="nav-item dropdown nav navbar-nav navbar-right">
+     <a class="nav-link" href="documentation_main.html" id="navbardrop" data-toggle="dropdown">Documentation</a>
+     <div class="dropdown-menu">
+       <a class="dropdown-item" href="documentation_employee.html">Employee</a>
+       <a class="dropdown-item" href="documentation_project.html">Project</a>
+       <a class="dropdown-item" href="documentation_department.html">Department</a>
+     </div>
+   </li>
+  </ul>
+    </div>
+    </span>
+</nav>
+
+<br>
+<div class="container">
+  <h1 class="solid"><strong>Project's User Documentation</strong></h1>
+
+<!--Introduction about the documentation and the application-->
+
+<br> <p class='design'>This fucntion allow user to view the existing projects in each departments, it 
+    allows authorized user to add new projects to any department, moreover it also allow authorized users to assign
+    any employee to any existing projects.</p>
+  <hr> 
+
+<!--Heading + The first Point-->
+  <br><h2 class="solid">The Project Screen</h2><br>
+
+  <!--Image for the main menu and the employee management screen-->
+  <img src="project1.JPG" alt="All Projects" width="90%">
+  <br><br><br>
+    
+  <h5>The main functionality presented on this screen are:</h5>
+  <br>
+  <ol>
+    <li>The navbar allow users to see the name of the applcation they using, the employee tab, add employee tab and documentation tab.
+      <ul>
+        <br>
+        <li>EM Management Tab
+          <br><p>&nbsp;&nbsp;&nbsp;The EM Management Tab is a linked tab which will take the user to the home page of the application where 
+            can access all the fucntions in this &nbsp;&nbsp;&nbsp;application.
+          </p>
+        </li>
+        <li>Project Tab
+            <br><p>&nbsp;&nbsp;&nbsp;The Project Tab will allow user to see all the existing projects in a department.</p>
+        </li>
+        <li>Add Project Tab
+            <br><p>&nbsp;&nbsp;&nbsp;The Add Project Tab is a linked tab which will take the user to a page where the user 
+              can add new projects to any departments.
+            </p>
+        </li>
+        <li>Assign Project Tab
+            <br><p>&nbsp;&nbsp;&nbsp;The Assign Project Tab is a linked tab which will take the user to a page where the user 
+              can assign any existing projects to any employee &nbsp;&nbsp;&nbsp;working in any department.
+            </p>
+        </li>
+        <li>Documentation Tab
+            <br><p>&nbsp;&nbsp;&nbsp;The Documentation Tab is a linked tab which will take the user to the documentation section. Where user can 
+              see the description of different &nbsp;&nbsp;&nbsp;fucntions of the system.
+            </p>
+        </li>
+      </ul>
+    </li>
+    <li>This table allow users to view the current projects existed with project number, project location and the department where the project is for. 
+      <br>
+    </li>
+  </ol>
+  
+<!------------------------------------------------------2nd Screen-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Heading + The first Point-->
+<br><h2 class="solid">Add Project Screen</h2><br>
+
+<!--Image for the main menu and the employee management screen-->
+<img src="project2.JPG" alt="Add Projects" width="90%px">
+<br><br><br>
+
+<h5>The main functionality presented on this screen are:</h5>
+<br>
+<ol>
+  <li>This form allow users to add new employees in an organization. This fucntion are only for authorized people like admin and 
+    department heads. The user can add SSN, Name, Salary, Department they work in, and so on.
+    <br>
+    <ul><br>
+      <li>Submit Button
+      <br><p>&nbsp;&nbsp;&nbsp;The submit button will submit the form and update the database with the newly added employee.
+      </p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<!------------------------------------------------------3rd Screen-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Heading + The first Point-->
+<br><h2 class="solid">Assign Project Screen</h2><br>
+
+<!--Image for the main menu and the employee management screen-->
+<img src="project3.JPG" alt="Assign Projects" width="90%px">
+<br><br><br>
+
+<h5>The main functionality presented on this screen are:</h5>
+<br>
+<ol>
+  <li>This form allow users to add new employees in an organization. This fucntion are only for authorized people like admin and 
+    department heads. The user can add SSN, Name, Salary, Department they work in, and so on.
+    <br>
+    <ul><br>
+      <li>Assign Button
+      <br><p>&nbsp;&nbsp;&nbsp;The submit button will submit the form and update the database with the newly added project.
+      </p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<br><br><br>
+<footer>
+  <div class="footer">
+  <hr>
+    <p class="footer" align="center">The Employee Management System® | User Documentation | Database Applications | Faiq Bin Zahid |  <a href="mailto:faiqbinzahid222441@gmail.com">
+    zahidfb@webster.ac.th</a></p>
+  <hr>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+iBooks Collection Log® 
+Monday 9th December 2019 09:02:26am
+______________________________________________________
+
+An information about the Book was removed from the system: 
+    
+-> Book ID: 232322
+-> Tag: author
+
+

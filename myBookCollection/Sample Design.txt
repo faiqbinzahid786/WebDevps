@@ -1,0 +1,18 @@
+----------------------------------------------------
+|             iBooks Collection Log                |
+|                                                  |
+|      Thursday 5th December 2019 04:33:06am       |
+|                                                  |
+|    A Book was added with the information below:  | 
+|                                                  |
+|                 Book ID: PT776                   |
+|               Author: Isaac Newton               |
+|                 Title: Gravity                   |
+|                 Genre: Science                   |
+|                 Price: 299.99                    |
+|                 Published Date:                  |
+|          Description: Newton Law of Motion       |
+|                                                  |
+|                    Faiq Bin Zahid                |
+----------------------------------------------------
+

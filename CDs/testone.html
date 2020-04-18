@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>File editor</title>
+    <script src="http://www.google.com/jsapi"></script>
+    <script>
+        google.load("jquery", "1.4.1");
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            // check to see if we have it in storage already
+            if (file = localStorage.getItem('<filename>')) {
+                $("textarea[id='edit_box']").val(file);
+            } else { // get it from the url
+                $.get("<url to file>", null, function(data) {
+                    $("textarea[id='edit_box']").val(data);
+                }, "text");
+            }
+
+            // save to storage
+            $("textarea[id='edit_box']").bind('keyup', function() {
+                localStorage.setItem('<filename>', this.value);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <form method="get" id="edit_file">
+        <input type="file"></input>
+        <div id="edit">
+            <textarea id="edit_box" placeholder="Type here" cols="80" rows="50"></textarea>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EMS Documentation</title>
+  <link rel="shortcut icon" type="image/png" href="people.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!--Linking all the stylesheets - CSS and Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+<div class='container-fluidser'>
+  <br><h1><strong>The Employee Management System®</strong></h1><br>
+</div>
+
+<nav class='navbar navbar-expand-sm bg-dark navbar-dark sticky-top '>
+
+    <div class='container-fluid' id="1">
+      <span class="cover">
+        <ul class='navbar-nav'>
+          <li class='nav-item active'>
+            <a class='nav-link' href='../index.php'>EM Managment</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='../employee.php'>Employees</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='../project.php'>Project</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='../department.php'>Department</a>
+          </li>
+          <li>
+            <a class="nav-link">
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+          </li>
+    <!-- Dropdown -->
+   <li class="nav-item dropdown nav navbar-nav navbar-right">
+     <a class="nav-link" href="documentation_main.html" id="navbardrop" data-toggle="dropdown">Documentation</a>
+     <div class="dropdown-menu">
+       <a class="dropdown-item" href="documentation_employee.html">Employee</a>
+       <a class="dropdown-item" href="documentation_project.html">Project</a>
+       <a class="dropdown-item" href="documentation_department.html">Department</a>
+     </div>
+   </li>
+  </ul>
+    </div>
+    </span>
+</nav>
+
+<br>
+<div class="container">
+  <h1 class="solid"><strong>Employee's User Documentation</strong></h1>
+
+<!--Introduction about the documentation and the application-->
+
+  <br> <p class='design'>This fucntion allow user to view the existing employees in the organization, moreover it also 
+    allow authorized user to add new employees to the organization. Authorized people can also assign different projects
+   to different employees anytime.</p>
+  <hr> 
+
+<!--Heading + The first Point-->
+  <br><h2 class="solid">The Employee Screen</h2><br>
+
+  <!--Image for the main menu and the employee management screen-->
+  <img src="employee1.JPG" alt="Employee Management" width="90%">
+  <br><br><br>
+    
+  <h5>The main functionality presented on this screen are:</h5>
+  <br>
+  <ol>
+    <li>The navbar allow users to see the name of the applcation they using, the employee tab, add employee tab and documentation tab.
+      <ul>
+        <br>
+        <li>EM Management Tab
+          <br><p>&nbsp;&nbsp;&nbsp;The EM Management Tab is a linked tab which will take the user to the home page of the application where 
+            can access all the fucntions in this &nbsp;&nbsp;&nbsp;application.
+          </p>
+        </li>
+        <li>Employee Tab
+            <br><p>&nbsp;&nbsp;&nbsp;The Employee Tab will allow user to see all the existing employees in an organization.              </p>
+        </li>
+        <li>Add Employee Tab
+            <br><p>&nbsp;&nbsp;&nbsp;The Add Employee Tab is a linked tab which will take the user to a page where the user 
+              can add new employees to the organizational system.
+            </p>
+        </li>
+        <li>Documentation Tab
+            <br><p>&nbsp;&nbsp;&nbsp;The Documentation Tab is a linked tab which will take the user to the documentation section. Where user can 
+              see the description of different &nbsp;&nbsp;&nbsp;fucntions of the system.
+            </p>
+        </li>
+      </ul>
+    </li>
+    <li>This table allow users to view the current employees existed in an organization. The user can view every employee's 
+      data (ssn, name, salary, department they work in, or works on).
+      <br>
+      <ul><br>
+        <li>Projects Button
+        <br><p>&nbsp;&nbsp;&nbsp;The projects button takes user to the assign project screen where the user can assign 
+          any project for any departments. 
+        </p>
+        </li>
+      </ul>
+    </li>
+  </ol>
+  
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Heading + The first Point-->
+<br><h2 class="solid">Add Employee Screen</h2><br>
+
+<!--Image for the main menu and the employee management screen-->
+<img src="employee2.JPG" alt="Employee Management" width="90%px">
+<br><br><br>
+
+<h5>The main functionality presented on this screen are:</h5>
+<br>
+<ol>
+  <li>This form allow users to add new employees in an organization. This fucntion are only for authorized people like admin and 
+    department heads. The user can add SSN, Name, Salary, Department they work in, and so on.
+    <br>
+    <ul><br>
+      <li>Submit Button
+      <br><p>&nbsp;&nbsp;&nbsp;The submit button will submit the form and update the database with the newly added employee.
+      </p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<br><br><br>
+<footer>
+  <div class="footer">
+  <hr>
+    <p class="footer" align="center">The Employee Management System® | User Documentation | Database Applications | Faiq Bin Zahid |  <a href="mailto:faiqbinzahid222441@gmail.com">
+    zahidfb@webster.ac.th</a></p>
+  <hr>
+</div>
+</footer>
+</body>
+</html>

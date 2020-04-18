@@ -1,0 +1,34 @@
+iBooks Collection Log® 
+Monday 9th December 2019 08:48:59am
+______________________________________________________
+
+A Book was added with the information below: 
+    
+-> Book ID: SH123
+-> Author: Sahar
+-> Title: 50 Shades
+-> Genre: Love
+-> Price: 69
+-> Published Date: 2009-01-09
+-> Description: Love Story
+
+
+iBooks Collection Log® 
+Monday 9th December 2019 08:56:07am
+______________________________________________________
+
+The ID of the Book that the information was editted:
+
+-> The Book ID: 12312313
+ 
+The new content of the Book added into the system:
+
+-> Book ID: gfds
+-> Author: 
+-> Title: 
+-> Genre: 
+-> Price: 
+-> Published Date: 
+-> Description: 
+
+

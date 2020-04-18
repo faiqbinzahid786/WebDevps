@@ -1,0 +1,43 @@
+iBooks Collection Log® 
+Sunday 8th December 2019 09:22:41pm
+______________________________________________________
+
+A Book was added with the information below: 
+    
+-> Book ID: ZH128
+-> Author: Zahid
+-> Title: Accounting
+-> Genre: Business
+-> Price: 98.99
+-> Published Date: 2019-04-08
+-> Description: Accounting
+
+
+iBooks Collection Log® 
+Sunday 8th December 2019 09:23:26pm
+______________________________________________________
+
+The ID of the Book that the information was editted:
+
+-> The Book ID: ZH128
+ 
+The new content of the Book added into the system:
+
+-> Book ID: John124
+-> Author: Isaac Newton
+-> Title: Gravity
+-> Genre:  Science
+-> Price: 799
+-> Published Date: 2019-12-08
+-> Description: Law of Gravity
+
+
+iBooks Collection Log® 
+Sunday 8th December 2019 09:23:36pm
+______________________________________________________
+
+A Book was removed from the system: 
+
+-> Book ID: CS123
+
+

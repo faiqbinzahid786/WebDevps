@@ -1,0 +1,95 @@
+<!--This file display all XML nodes in table form using JS-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Books</title>
+
+    <script src="include.js"></script>
+
+</head>
+
+<body>
+    <div w3-include-html="head.html"></div>
+    <script>
+        includeHTML();
+    </script>
+
+    <button type="button" class="btn btn-dark block" onclick="loadDoc()">CD collection</button>
+    <br><br>
+    <table id="demo" class="table"></table>
+
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET", "cd_catalog.xml", true);
+            xhttp.send();
+        }
+
+        function myFunction(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table = "<tr><th>Artist</th><th>Title</th></tr>";
+            var x = xmlDoc.getElementsByTagName("CD");
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+            }
+            document.getElementById("demo").innerHTML = table;
+        }
+
+        var xw = new XMLWriter('UTF-8');
+        xw.formatting = 'indented'; //add indentation and newlines
+        xw.indentChar = ' '; //indent with spaces
+        xw.indentation = 2; //add 2 spaces per level
+
+        xw.writeStartDocument();
+        xw.writeDocType('"items.dtd"');
+        xw.writeStartElement('items');
+
+        xw.writeComment('button');
+        xw.writeStartElement('item');
+        xw.writeAttributeString('id', 'item-1');
+        xw.writeAttributeString('enabled', 'true');
+        xw.writeStartElement('code');
+        xw.writeCDATA('<button>Save</button>');
+        xw.writeEndElement();
+        xw.writeElementString('description', 'a save button');
+        xw.writeEndElement();
+
+        xw.writeComment('image');
+        xw.writeStartElement('item');
+        xw.writeAttributeString('id', 'item-2');
+        xw.writeAttributeString('enabled', 'false');
+        xw.writeStartElement('code');
+        xw.writeCDATA('<img src="photo.gif" alt="me" />');
+        xw.writeEndElement();
+        xw.writeElementString('description', 'a pic of myself!');
+        xw.writeEndElement();
+
+        xw.writeComment('link');
+        xw.writeStartElement('item');
+        xw.writeAttributeString('id', 'item-3');
+        xw.writeAttributeString('enabled', 'true');
+        xw.writeStartElement('code');
+        xw.writeCDATA('<a href="http://google.com">Google</a>');
+        xw.writeEndElement();
+        xw.writeElementString('description', 'a link to Google');
+        xw.writeEndElement();
+
+        xw.writeEndElement();
+        xw.writeEndDocument();
+    </script>
+
+</body>
+
+</html>

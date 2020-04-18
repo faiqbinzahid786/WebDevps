@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EMS Documentation</title>
+  <link rel="shortcut icon" type="image/png" href="people.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!--Linking all the stylesheets - CSS and Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div class='container-fluidser'>
+  <br><h1><strong>The Employee Management System®</strong></h1><br>
+</div>
+
+<nav class='navbar navbar-expand-sm bg-dark navbar-dark sticky-top '>
+
+    <div class='container-fluid' id="1">
+      <span class="cover">
+        <ul class='navbar-nav'>
+          <li class='nav-item active'>
+            <a class='nav-link' href='../ems/index.php'>EM Managment</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='.. /ems/employee.php'>Employees</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='../ems/project.php'>Project</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='../ems/department.php'>Department</a>
+          </li>
+          <li>
+            <a class="nav-link">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+          </li>
+    <!-- Dropdown -->
+   <li class="nav-item dropdown nav navbar-nav navbar-right">
+     <a class="nav-link" href="documentation_main.html" id="navbardrop" data-toggle="dropdown">
+       Documentation
+     </a>
+     <div class="dropdown-menu">
+       <a class="dropdown-item" href="documentation_employee.html">Employee</a>
+       <a class="dropdown-item" href="documentation_project.html">Project</a>
+       <a class="dropdown-item" href="documentation_department.html">Department</a>
+       <a class="dropdown-item" href="documentation_about.html">About Us</a>
+     </div>
+   </li>
+  </ul>
+    </div>
+    </span>
+</nav>
+
+<br>
+<div class="container">
+  <h1 class="solid"><strong>About Us</strong></h1>
+
+<!--Introduction about the documentation and the application-->
+  <br>
+  <br> <p class='design'>This system is build in order to maintain employee's data is softcopy or databse. The user can only view the current employees, on going projects and existing departments.
+  The admin or the head of deaprtments can <strong>add employees</strong>, <strong>add departments</strong> and <strong>add projects</strong>. What ever the user type in the input box, the box will then automatically add the inputted
+  text into the sql query and execute it. The URL to the application is <kbd><a href='http://natto.mooo.com/~db4140669/ems/' target='_blank'>http://natto.mooo.com/~db4140669/ems/</a></kbd>.
+  The application is username/password protected. This application contain 7 screens which include EM Management screen (home screen), Employee screen, Project screen, and Department screen.</p>
+  <hr>
+  <br>
+  <h2 class="solid">The Main Screen and Employee Management Screen</h2>
+
+<!--Heading + The first Point-->
+  <br><br>
+  <h5>The main functionality presented on this screen are:</h5>
+  <p class="design">
+    <br><strong>(1)</strong> The main menu allow users to see where they are and who they are logged in as such as (Admin or Department Head).
+    User can also select the Employee Information Menu to directly gain access to the database view of the employee's information.
+
+<!--Second point-->
+    <br><br><strong>(2)</strong> This fucntion allow user to input information about the current employees and extract the information as they desired.This fucntion uses <strong>SELECT</strong> sql command. For instance, user want to search the employee with the
+    salary of $5000 then user will have to enter 5000 in the salary box. Moreover, they can also reset/clear all by just pressing "Reset" button. If user input invalid data/empty the alert box will apear saying please re-enter.
+
+<!--Third point-->
+
+    <br><br><strong>(3)</strong> This fucnion will allow user to insert new employees or delete existing employee. This fucntion uses <strong>INSERT and DELETE</strong> sql fucntions in order to add and remove the employee. If user input invalid data the alert box will apear saying please re-enter.
+  </p>
+
+<!--Image for the main menu and the employee management screen-->
+  <br>
+  <figure>
+    <img src="MainScreen.png" alt="Employee Management" width="700px">
+    <figcaption>Fig.1 - The Main Screen and Employee Management</figcaption>
+  </figure>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--2nd Screen - Employee Information Screen: Description-->
+  <hr>
+  <br>
+  <h2 class="solid">Database View and Employee Information</h2>
+
+<!--First point - Database View: Description    and     Heading-->
+<br><br>
+<h5>The main fucntionality presented on this screen are:</h5>
+<p class="design">
+  <br><strong>(1)</strong> This is the databse view of all the employees. If you access this screen directly from the main menu the data of all the emplopyee will be automitically showed.
+  After filling the search boxes on the main screen, the user will be directed to this screen where the desired output will be shown.
+
+<!--Second point - Database View: Description-->
+<br><br><strong>(2)</strong> In some cases, the output might be very large and indeed it will be long. This button is programmed to take the user back to the main screen after
+viewing the database. This will be easier as the user don't have to go back to the top of the page to go to another screen.
+
+
+</p>
+<!--Image for Employee Information Screen-->
+  <br>
+  <figure>
+    <img src="DatabseScreen.png" alt="Employee Management" width="700px">
+    <figcaption>Fig.2 - Database View and Employee Information</figcaption>
+  </figure>
+</div>
+
+<br><br>
+<h4 class="top"><kbd><a href="#Top">Back to the top</a></kbd></h4>
+
+</body>
+</html>

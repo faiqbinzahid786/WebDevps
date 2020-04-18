@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movies</title>
+    <script src="include.js"></script>
+
+</head>
+
+<body>
+    <div w3-include-html="head.html"></div>
+    <script>
+        includeHTML();
+    </script>
+
+    <div class="container">
+        <br><br>
+        <h1>Click on a CD to display album information.</h1>
+        <p id='showCD'></p>
+        <p id='showCDrem'></p>
+        <div id="helpdiv" style="display:block">
+            <p id='displayRemovin'></p>
+        </div>
+        <div id="delayedText2" style="visibility:hidden">
+
+            <p id='displayRem'></p>
+
+        </div>
+        <table id="demo" class="table"></table>
+        <button type="button" class="btn btn-dark block" onclick="save()">Save File</button>
+
+        <!--JS File-->
+        <script src="script.js"></script>
+
+
+    </div>
+
+
+</body>
+
+</html>

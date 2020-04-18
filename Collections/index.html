@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My_Collections</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div align="center" class="container-fluid "><br>
+        <h1 class="display-3"><b>Welcome to My Collections</b></h1><br>
+        <br>
+        <button onclick="myCDcollections()" class="btn btn-dark block">My CDs Collection</button>
+        <br><br>
+        <button onclick="myBookcollections()" class="btn btn-dark block">My Books Collection</button>
+    </div>
+
+    <script>
+        function myCDcollections() {
+            window.open("/CDs");
+        }
+
+        function myBookcollections() {
+            window.open("/myBookCollection");
+        }
+    </script>
+
+
+</body>
+
+</html>

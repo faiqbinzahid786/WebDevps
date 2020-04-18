@@ -1,0 +1,38 @@
+<!--Login page for Log file-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Collection</title>
+
+    <script src="include.js"></script>
+
+</head>
+
+<body>
+    <div w3-include-html="head.html"></div>
+    <script>
+        includeHTML();
+    </script>
+
+    <div class="container">
+        <br><br>
+        <b><h1 style="margin-left: 350px; font-size: 60px;">Restricted Area</h1> </b><br><br><br>
+        <h1>Log in to View the Log</h1> <br>
+        <form action="log_target.php" method="GET">
+            <div class="form-group">
+                <label for="book_id">Username:</label>
+                <input type="username" class="form-control" placeholder="Enter Username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="Author">Password:</label>
+                <input type="password" class="form-control" placeholder="Enter Password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-dark block">Login</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
